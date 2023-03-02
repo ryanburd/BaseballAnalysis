@@ -1,10 +1,10 @@
-# This code shows the change in MLB league average stats per year. Data were obtained from Baseball-Reference.
+# This code shows the change in MLB league average stats per year. Data were obtained from Baseball-Reference. Stats are provided for batting, pitching, fielding, and misc.
 #
 # All stats are already provided as per game averages, allowing for comparison of how the league averages for each stat changed over the years regardless of how many games were played each season.
 #
-# The stats are plotted by year as percent changes relative to the average over a reference year range controlled by the user. This normalization allows for comparison of how drastically each stat has changed over the years, providing inside for how baseball strategy has developed.
+# The stats are plotted by year as percent changes relative to the average over a reference year range controlled by the user. This normalization allows for comparison of how drastically each stat has changed over the years, providing inside into how baseball strategy has developed through the years.
 # 
-# Currently, the 1908-1919 year range is used as the reference to show how stats have changed relative to the "dead-ball era," a time when runs/game were at some of their lowest in history and offensive strategies favored contact hitting over power hitting. 1908 is the earliest year for some of the recorded stats used here, and 1919 marked the last year before many batters across the league started copying Babe Ruth's new power hitting strategy. 
+# Currently, the 1908-1919 year range is used as the reference to show how stats have changed relative to the "dead-ball era," a time when runs/game were at some of their lowest in history and offensive strategy favored contact hitting over power hitting. 1908 is the earliest year for some of the recorded stats used here, and 1919 marked the last year before many batters across the league started copying Babe Ruth's new power hitting strategy, marking the end of the dead-ball era.
 
 import pandas as pd
 import matplotlib.pyplot as plt

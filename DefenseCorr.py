@@ -94,8 +94,9 @@ def plot_position_groups(groups, df):
 def main():
 
     # Read in defensive stats from csv files.
-    OAA_df = read_data('outs_above_average.csv')
-    std_df = read_data('standard_fielding.csv')
+    folder = 'FieldingStats/'
+    OAA_df = read_data(folder+'outs_above_average.csv')
+    std_df = read_data(folder+'standard_fielding.csv')
 
     # Reformat the player name column in each dataframes so they can be properly merged by player name. Then keep only the desired stats in the dataframe.
     desired_OAA_stats = ['Player', 'Pos', 'OAA']

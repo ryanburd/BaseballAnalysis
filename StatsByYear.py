@@ -18,7 +18,8 @@ class statGroup:
         self.stats = stats
     
     def prepare_dataframe(self, index):
-        self.df = pd.read_csv(self.file_name)
+        folder = 'YearlyStats/'
+        self.df = pd.read_csv(folder+self.file_name)
         self.df = self.df.set_index(index)
 
         # Select desired stats. Remove years with NaN. Recast stats to type float. For CS% under fielding stats, remove the % symbol for conversion to float.
